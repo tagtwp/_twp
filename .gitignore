@@ -16,3 +16,4 @@ _twp.zip
 
 # Ignore .DS_Store files from macOS:
 .DS_Store
+.idea
