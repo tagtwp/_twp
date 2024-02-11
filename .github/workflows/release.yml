@@ -1,7 +1,7 @@
 # Name of the workflow
 name: Release
 
-# Run on every commit tag which begins with "v" (e.g., "v1.0.0")
+# Run on every commit tag which begins with "v" (e.g., "v1.0.1")
 on:
   push:
     tags:
@@ -16,4 +16,5 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
+#          prerelease: false
+          draft: true
